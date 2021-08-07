@@ -1,0 +1,13 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+*,::after,::before{
+    box-sizing: inherit;
+}
+.body{
+    margin: 0px;
+    min-width: 580px;
+    background-color:#03071E;
+    height: 100%;
+}

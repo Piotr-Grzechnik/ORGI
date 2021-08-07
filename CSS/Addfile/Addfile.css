@@ -1,0 +1,146 @@
+.container {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    margin: 0% auto;
+    padding: 5px;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    height: 50%;
+}
+
+.addedfile {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+} 
+.addedfile::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.addedfile::before {
+    text-align: center;
+    content: 'Wybierz plik';
+    background-color: hsl(212, 14%, 74%);
+    border: 1px solid #999;
+    border-radius: 20px;
+    padding: 15px;
+    outline: none;
+    white-space: nowrap;
+    /* -webkit-user-select: none; */
+    cursor: pointer;
+    font-weight:bold;
+    font-size: 20px;
+    height: 50px;
+}
+.addedfile:hover::before {
+    border-color: black;
+    background-color: rgba(51, 60, 71, 0.863);
+    color: white;
+}
+
+.addedfile:active::before {
+    background-color: hsl(213, 16%, 44%);
+    color: white;
+}
+
+.format {
+    color: white;
+    font-size: 30px;
+    max-width: 600px;
+    margin: 10px 0px;
+}
+
+.size {
+    color: white;
+    font-size: 30px;
+    max-width: 600px;
+    text-align: center;
+    margin: 10px 0px 40px 0px;
+}
+.filename{
+    color: white;
+    font-size: 30px;
+    max-width: 600px;
+    word-break: break-all;
+    margin: 10px 0px;
+}
+.warning{
+    color: white;
+    margin: 40px 0px 0px 0px;
+}
+.warning__example{
+    color: white;
+    align-self: start;
+    justify-self: start;
+    margin: 0px;
+}
+.uploadbtn{
+    text-align: center;
+    background-color: hsl(212, 14%, 74%);
+    border: 1px solid #999;
+    border-radius: 20px;
+    padding: 5px;
+    white-space: nowrap;
+    /* -webkit-user-select: none; */
+    cursor: pointer;
+    font-weight:bold;
+    font-size: 25px;
+    height: 50px;
+}
+.uploadbtn:hover {
+    border-color: black;
+    background-color: rgba(51, 60, 71, 0.863);
+    color: white;
+}
+
+.uploadbtn:active {
+    background-color: hsl(213, 16%, 44%);
+    color: white;
+}
+.form{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+.file__description{
+    background-color: rgb(224, 220, 220);
+    resize:vertical;
+    width: 300px;
+    height: 60px;
+}
+.file__description::placeholder{
+    color: darkmagenta;
+}
+.tagslist{
+    color:  white;
+    width: 60%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.js-remove{
+    float: right;
+    margin:0px;
+    font-size: 5px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+.tag{
+    float: left;
+    margin:0px;
+}
+.tagitem{
+    clear: both;
+    padding: 5px;
+    font-size: 15px;
+    background-color: tomato;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-left: 10px;
+}

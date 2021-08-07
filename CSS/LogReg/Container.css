@@ -1,0 +1,93 @@
+.container {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20% 10%;
+    padding: 5px;
+    align-items: center;
+}
+
+.container__Login {
+    max-width: 100%;
+    min-width: 150px;
+    padding: 20px;
+    height: 100%;
+    background-color: hsl(212, 14%, 74%);
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.container__title {
+    color: hsl(0, 0%, 25%);
+    font-weight: bold;
+}
+
+.container__input {
+    min-width: 100%;
+    max-width: 100%;
+    border: none;
+    border-radius: 20px;
+    height: 20px;
+    margin: 2px;
+    padding: 5px;
+    transition: 2s;
+}
+
+.container__input:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 1px rgb(0, 0, 0);
+}
+
+.container__input::placeholder {
+    color: rgba(0, 0, 0, 0.349);
+}
+
+.container__Registration {
+    max-width: 100%;
+    min-width: 150px;
+    padding: 20px;
+    height: 100%;
+    background-color: hsl(212, 14%, 74%);
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+}
+
+.container__CenterLogo {
+    max-width: 100%;
+    min-width: 150px;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(53, 58, 64, 0.514);
+    color: white;
+    text-align: center;
+    border-radius: 60% 0%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__button {
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    transition: background 2s, color 2s;
+}
+
+.container__button:hover {
+    background-color: rgba(51, 60, 71, 0.863);
+    color: white;
+}
+
+.container__button:active {
+    background-color: hsl(213, 16%, 44%);
+    color: white;
+}
